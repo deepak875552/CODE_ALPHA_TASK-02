@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container my-5">
+      <h1 class="text-center mb-4">Expense Tracker App</h1>
+      <div class="card">
+        <div class="card-body">
+          <form id="expense-form">
+            <div class="form-group">
+              <label for="expense-name">Expense Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="expense-name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="expense-amount">Amount</label>
+              <input
+                type="number"
+                class="form-control"
+                id="expense-amount"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Add Expense
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="card mt-4">
+        <div class="card-body">
+          <h3 class="card-title">Expenses</h3>
+          <ul id="expense-list" class="list-group"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
